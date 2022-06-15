@@ -1,0 +1,25 @@
+<p>Hello <%= username %> ,</p>
+<P>we hope provide service to you and your last transactions.....</P>
+<table  style="text-align: center;background-color: #b8177593"> 
+  <thead style="background-color: #1798b8bd"> 
+      <tr> 
+          <th>Transaction Type</th> 
+          <th>Transaction Amount</th> 
+           <th>Time</th> 
+      </tr> 
+  </thead> 
+  <tbody style="background-color:#fff">
+      <% beans.forEach(function(bean) { %>
+          <tr> 
+               
+              <td><%= bean.TransactionType %></td> 
+              <td><%= bean.TransactionAmount %></td>
+              <td><%= bean.Time %></td>
+          </tr> 
+      <% }); %>
+  </tbody> 
+</table>
+
+<img src="https://www.bankofindia.co.in/Content/Images/Responsbility-4-Banner-Eng.jpg" style="margin-top:50px;width:770px;">
+
+
